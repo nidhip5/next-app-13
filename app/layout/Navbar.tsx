@@ -26,9 +26,6 @@ const Navbar = () => {
           <li key={item.href}>
             <Link
               href={item.href}
-              // className={`${
-              //   item.href === pathname ? "text-zinc-900" : "text-zinc-500"
-              // } hover:text-zinc-800 transition-colors`}
               className={classnames({
                 "text-zinc-500": item.href !== pathname,
                 "text-zinc-900": item.href == pathname,
